@@ -8,7 +8,14 @@
 def categorize_age(age):
     ageCategory = "TBD"
     ######################
-    # WRITE YOUR CODE HERE
+    if age <= 1:
+        ageCategory = "You are an infant"
+    if age > 1 and age < 13:
+        ageCategory = "You are a child"
+    if age >= 13 and age < 20:
+        ageCategory = "You are a teenager"
+    if age >= 20:
+        ageCategory = "You are an adult"
     ######################
 
 
@@ -16,7 +23,7 @@ def categorize_age(age):
 
 
 #### This piece of the code has been done for you,
-#### you only need to worry about the actual shipping 
+#### you only need to worry about the actual shipping
 #### charge logic in the weight_conversion function
 if __name__ == '__main__':
     # Local variables
